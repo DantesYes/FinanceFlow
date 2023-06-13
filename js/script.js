@@ -403,6 +403,55 @@ function popupPop(){
 }
 popupPop()
 
+// scroll up
+
+function scrollUp(){
+
+    window.addEventListener('scroll', () =>{
+        let trade = document.querySelector('.trade')
+        let up = document.querySelector('.up')
+
+        let cord = trade.getBoundingClientRect().bottom
+        
+         if (cord <= 0){
+            up.classList.add('active')
+         } else{
+            up.classList.remove('active')
+         }
+         up.addEventListener('click', () =>{
+            
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            })
+         })
+    })
+
+}
+scrollUp()
+
+// smoothscroll
+
+        SmoothScroll({
+            animationTime: 800,
+            stepSize: 75,
+         
+            accelerationDelta: 30,
+            accelerationMax: 2,
+
+            keyboardSupport: true,
+            arrowScroll: 50,
+
+           
+            pulseAlgorithm: true,
+            pulseScale: 4,
+            pulseNormalize: 1,
+
+           
+            touchpadSupport: true,
+        })
+
 // function cursorGsap(){
 
 //     let cursor = document.querySelector('.cursor')
