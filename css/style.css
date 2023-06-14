@@ -3277,7 +3277,7 @@ body.active {
     height: 581px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   .head {
     margin: 0 0 15px 0;
   }
