@@ -1702,6 +1702,9 @@ body.active {
   width: 15px;
   height: 15px;
 }
+.main .slider .slid .swiper-pagination .swiper-pagination-bullet{
+  cursor: pointer;
+}
 .main .slid .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ad9c9c;
 }
