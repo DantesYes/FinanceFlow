@@ -1,4 +1,4 @@
-# FinanceFlow 
+# FinanceFlow (landing page)
 
 -html
 
